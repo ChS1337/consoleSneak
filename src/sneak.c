@@ -19,7 +19,6 @@ void moves();
 void renderSize(int xMax,int yMax);
 
 int main(){
-	//int coords[2] = { 0 , 0};
 	int getchval = 0;
 	int size = 1;
 	int coordsSneak[2][500];
