@@ -1,7 +1,7 @@
 /*
  ============================================================================
  Name        : sneak.c
- Author      :
+ Author      : ChS
  Version     :
  Copyright   : Your copyright notice
  Description : Hello World in C, Ansi-style
