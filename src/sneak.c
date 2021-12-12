@@ -44,41 +44,25 @@ int main(){
 	renderSize(31,20);
 
 	while(1){
-		if(_kbhit()){
+		if(_kbhit()){ //ChangeFacing
 			getchval = getch();
 			if(move[0] == getchval){
 				if(facing != 2){
-//					if(facing != 0){
-//						coordsSneak[0][0]--;
-//						moveCount = 0;
-//					}
 					facing = 0;
 				}
 			}
 			if(move[1] == getchval){
 				if(facing != 3){
-//					if(facing != 1){
-//						coordsSneak[1][0]++;
-//						moveCount = 0;
-//					}
 					facing = 1;
 				}
 			}
 			if(move[2] == getchval){
 				if(facing != 0){
-//					if(facing != 2){
-//						coordsSneak[0][0]++;
-//						moveCount = 0;
-//					}
 					facing = 2;
 				}
 			}
 			if(move[3] == getchval){
 				if(facing != 1){
-//					if(facing != 3){
-//						coordsSneak[1][0]--;
-//						moveCount = 0;
-//					}
 					facing = 3;
 				}
 			}
@@ -142,9 +126,6 @@ int main(){
 				matrix[coordsSneak[0][i]][coordsSneak[1][i]] = 'o';
 			}
 
-		//if(matrix[coordsSneak[0][0]][coordsSneak[1][0]] == 'o') isDead = 1;
-
-
 		matrix[coordsSneak[0][0]][coordsSneak[1][0]] = '*'; //render sneak head
 
 
@@ -178,7 +159,7 @@ int main(){
 		}
 
 
-
+		//debug info
 		//printf("sneakX=%i sneakY=%i Facing=%i Size=%i appleX=%i applyY=%i\n",coordsSneak[0][0], coordsSneak[1][0],facing,size,apple[0],apple[1]);
 		//printf("sneakX=%i sneakY=%i sneakX2=%i sneakY2=%i\n",coordsSneak[0][0], coordsSneak[1][0],coordsSneak[0][1], coordsSneak[1][1]);
 
